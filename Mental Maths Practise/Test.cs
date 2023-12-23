@@ -34,7 +34,7 @@ public class Test(int numberOfQuestions, int multiplierNumberOfDigits, int multi
         stopwatch.Start(); // measures how long the test will take
         for (int i = 0; i < numberOfQuestions; i++)
         {
-            Console.WriteLine("\n" + Questions[i]); // IMPORTANT BELOW 
+            Console.WriteLine("\n" + Questions[i]);
             string? userInput = Console.ReadLine(); // gets the user's answer, accepts null as an input
             bool isANumber = int.TryParse(userInput, out int userAnswer); // trys to parse input into an int
             if (!isANumber) // if it can't be parsed, say the answer is wrong
